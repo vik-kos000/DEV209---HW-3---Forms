@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Example 1</title>
+      <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+  <!-- forms started with the idea of sending enclosed data back up to a webiste -->
+  <!-- <form name = "mainFrom" action="http:// mywebsite/action_page"></form> -->
+  <!-- <input type="submit" >  shows a submit button-->
+  <!-- which we may well do in other projects later, but for now, 
+    we want to got to a js function -->
+
+  <form name = "mainFrom" ></form>
+  
+
+<!--       The <fieldset> tag is used to group related elements in a form. -->
+	<fieldset id="custInfo">
+    <!--       The <legend> tag is puts a title on this subset of the form -->
+    <legend>Customer Information</legend>
+    <!--       for= some id connects the lable to to the input box -->
+   <label for="custname"> Name:</label> 
+    <input name="custname" id="custname" />
+    
+    <label for="street">Street address:</label>
+    <input name="street" id="street" />
+    
+     <label for="city">City:</label>
+    <input name="city" id="city" />
+      <br>
+		<label for="state">State (abbr.):</label>
+    <input name="state" id="state" />
+    
+      <label for="zip"> Postal code</label>
+    <input name="zip" id="zip" />
+      <!-- here we submit to a local js file -->
+    <input type="submit" value="Submit" onclick="formSubmitEvent()">
+      <!-- <input type="submit" > -->
+    
+    </fieldset>
+  
+    
+	<fieldset id="experience">
+    <legend>transaction accepted</legend>
+        
+    <label for="visitdate">Date of visit:</label>
+    <input name="visitdate" id="visitdate" />
+    
+    <label for="cust2">Customer:</label>
+    <input name="cust2" id="cust2" />
+    </fieldset>
+  </form>
+
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
