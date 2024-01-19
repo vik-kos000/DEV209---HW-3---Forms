@@ -1,15 +1,32 @@
-
-fieldset {
-background-color:rgb(255,246,205);	
-border:1px solid rgb(233,69,0);
-margin:10px 0px 30px 2.5%;
-width:70%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    margin: 0 auto;
+    max-width: 300px; 
 }
 
-/*  this overides the generic fieldset css setting for this item by id */
-#logIn {
-background-color:rgb(217, 227, 235);	
-border:1px solid rgb(0, 167, 233);
-margin:10px 0px 30px 2.5%;
-width:46%;
+legend {
+    font-size: 15pt;
+    width: 100%; 
+    text-align: left;
+}
+
+input {
+    display: block; 
+}
+
+fieldset {
+    background-color: #d4e4c8;
+    border: 2px solid #7dc44a;
+    margin: 10px 0 30px 2.5%;
+    padding: 10px; 
+}
+
+#newOrOldUser {
+    background-color: rgb(187, 208, 225);
+    border: 2px solid rgb(77, 184, 227);
+    margin: 50px 20px 30px 0%;
+    padding: 10px;
+    text-align: center; 
+    width: 300px;
 }

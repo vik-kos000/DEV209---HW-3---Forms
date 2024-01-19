@@ -51,7 +51,7 @@ function oldUserLogin(event){
     if (logInUserName === storedUserName && logInPassword === storedPassword) {
         alert("Welcome back " + logInUserName);
     } else {
-        alert("Invalid");
+        alert("Invalid username or password");
     }
 }
 
